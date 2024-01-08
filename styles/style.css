@@ -11,6 +11,9 @@ body {
   color: var(--dark-gray);
   background-color: var(--bg-color-white);
 }
+body.lock{
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
@@ -55,6 +58,7 @@ button {
   color: var(--primary);
 }
 .base__descr {
+  text-align: center;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;

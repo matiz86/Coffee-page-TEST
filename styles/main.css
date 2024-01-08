@@ -2,10 +2,31 @@
   flex: 1 1 auto;
 }
 
-.home {}
+.home {
+  height: 100vh;
+  background-image: url(../assets/webp/home-bg.jpg);
+  background-position: 52% 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+}
 
 
-.home__title {}
+.home__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 130%;
+  color: var(--primary);
+  position: absolute;
+  bottom: 65px;
+}
+
+.home__title span {
+  background: var(--accent-dark);
+  padding: 5px 15px;
+  color: #fff;
+}
 
 .base {}
 
