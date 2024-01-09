@@ -1,0 +1,142 @@
+.filter {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.filter::before {
+  content: '';
+  height: 100%;
+  background-color: var(--primary);
+  width: 25%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.block__title--filter {
+  padding-top: 20px;
+}
+
+.slider__filter {
+  position: relative;
+}
+
+.slider__filter--block {
+  display: flex;
+  align-items: center;
+  margin: 0 30px 30px 0;
+  background-color: #fff;
+  border: #151d250c 2px solid;
+}
+
+.slider__filter--block:hover {
+  box-shadow: 0px 4px 24px #cdcdcd80;
+}
+
+.slider__filter--image {
+  background-color: var(--light-gray);
+  margin-right: 43px;
+}
+
+.slider__filter--body {
+  min-width: 240px;
+}
+
+.slider__filter--price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--accent-dark);
+  margin-bottom: 8px;
+}
+
+.slider__filter--title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #232c38;
+  margin-bottom: 24px;
+}
+
+.slider__filter--text {
+  line-height: 22px;
+  margin-bottom: 27px;
+  height: 50px;
+}
+
+.slider__filter--link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--bg-color-white);
+  padding: 6px 17px;
+  background-color: var(--accent-dark);
+  border-radius: 19px;
+  margin-right: 28px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.slider__filter--link:hover {
+  transform: translateY(-3px);
+}
+
+.slider__filter--detail {
+  font-weight: 700;
+  line-height: 22px;
+  color: var(--primary);
+  text-transform: uppercase;
+  position: relative;
+}
+
+.slider__filter--detail::after {
+  content: '';
+  position: absolute;
+  widows: 0;
+  height: 2px;
+  background-color: var(--accent-dark);
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.slider__filter--detail:hover::after {
+  width: 100%;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick__filter .slick-arrow {
+  font-size: 0;
+}
+
+.slider__filter .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__filter .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.slider__filter .slick-dots li.active button {
+  background-color: var(--primary);
+  transition: all 0.3s ease-in-out;
+}
+
+.slider__filter .slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent-dark);
+  border-radius: 50%;
+}
